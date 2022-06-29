@@ -29,7 +29,7 @@ public class McCreate extends EmailHandler {
     }
 
     private String rdmID() {
-        return new Random().ints(65, 123).filter(i -> !(i >= 91 && i <= 96)).limit(8)
+        return new Random().ints(97, 123).limit(10)
                 .collect(StringBuilder::new, StringBuilder::appendCodePoint, StringBuilder::append).toString();
     }
 

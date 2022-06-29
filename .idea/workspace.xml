@@ -7,7 +7,6 @@
     <list default="true" id="124027d8-24d9-49bf-9258-744648dd5525" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/icu/jnet/mccreate/McCreate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/icu/jnet/mccreate/McCreate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +68,7 @@
       <workItem from="1656424205111" duration="3000" />
       <workItem from="1656450555956" duration="17000" />
       <workItem from="1656500851239" duration="238000" />
-      <workItem from="1656502318813" duration="1585000" />
+      <workItem from="1656502318813" duration="1875000" />
     </task>
     <servers />
   </component>
