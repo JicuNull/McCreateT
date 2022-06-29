@@ -17,7 +17,7 @@ public class EmailHandler {
         this.password = password;
     }
 
-    public String searchActivationCode(String regEmail, int timeout) {
+    String searchActivationCode(String regEmail, int timeout) {
         for(int i = 0; i < timeout; i += 4) {
             waitMill(4000);
 
@@ -29,7 +29,7 @@ public class EmailHandler {
         return null;
     }
 
-    public String searchActivationCode(String regEmail) {
+    String searchActivationCode(String regEmail) {
         try {
             Properties props = System.getProperties();
             props.setProperty("mail.store.protocol", "imaps");
