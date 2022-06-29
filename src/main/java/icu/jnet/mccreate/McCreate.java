@@ -34,6 +34,6 @@ public class McCreate extends EmailHandler {
     }
 
     private boolean success(Response response) {
-        return response.getStatus().getMessage().equals("Success");
+        return response.getStatus().getMessage().contains("successfully");
     }
 }
