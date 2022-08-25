@@ -12,8 +12,8 @@ repositories {
 }
 
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.0'
 
     // https://mvnrepository.com/artifact/javax.mail/javax.mail-api
     implementation group: 'javax.mail', name: 'javax.mail-api', version: '1.6.2'
@@ -24,7 +24,7 @@ dependencies {
     // https://mvnrepository.com/artifact/org.apache.commons/commons-email
     implementation group: 'org.apache.commons', name: 'commons-email', version: '1.5'
 
-    implementation 'com.github.JicuNull:MCReverse:0d09078'
+    implementation 'com.github.JicuNull:MCReverse:4f24374'
 }
 
 test {
