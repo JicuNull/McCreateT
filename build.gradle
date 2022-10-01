@@ -24,7 +24,7 @@ dependencies {
     // https://mvnrepository.com/artifact/org.apache.commons/commons-email
     implementation group: 'org.apache.commons', name: 'commons-email', version: '1.5'
 
-    implementation 'com.github.JicuNull:MCReverse:4f24374'
+    implementation 'com.github.JicuNull:MCReverse:7257d51'
 }
 
 test {
