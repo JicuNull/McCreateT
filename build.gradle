@@ -15,8 +15,14 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.0'
 
-    // https://mvnrepository.com/artifact/com.google.http-client/google-http-client
-    implementation 'com.google.http-client:google-http-client:1.42.2'
+    // https://mvnrepository.com/artifact/javax.mail/javax.mail-api
+    implementation group: 'javax.mail', name: 'javax.mail-api', version: '1.6.2'
+
+    // https://mvnrepository.com/artifact/javax.activation/activation
+    implementation group: 'javax.activation', name: 'activation', version: '1.1.1'
+
+    // https://mvnrepository.com/artifact/org.apache.commons/commons-email
+    implementation group: 'org.apache.commons', name: 'commons-email', version: '1.5'
 
     // https://mvnrepository.com/artifact/com.google.code.gson/gson
     implementation 'com.google.code.gson:gson:2.9.1'
