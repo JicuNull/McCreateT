@@ -6,6 +6,8 @@ import icu.jnet.mcd.api.McClient;
 import icu.jnet.mcd.api.response.Response;
 import icu.jnet.mcd.utils.listener.ClientStateListener;
 
+import java.net.InetSocketAddress;
+import java.net.Proxy;
 import java.util.Random;
 
 public class McCreate extends EmailHandler {
