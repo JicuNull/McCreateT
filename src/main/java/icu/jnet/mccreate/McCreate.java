@@ -2,12 +2,10 @@ package icu.jnet.mccreate;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import icu.jnet.mcd.api.McClient;
-import icu.jnet.mcd.api.response.Response;
-import icu.jnet.mcd.utils.listener.ClientStateListener;
+import org.jannsen.mcreverse.api.McClient;
+import org.jannsen.mcreverse.api.response.Response;
+import org.jannsen.mcreverse.utils.listener.ClientStateListener;
 
-import java.net.InetSocketAddress;
-import java.net.Proxy;
 import java.util.Random;
 
 public class McCreate extends EmailHandler {

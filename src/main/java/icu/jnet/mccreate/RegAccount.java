@@ -1,6 +1,6 @@
 package icu.jnet.mccreate;
 
-import icu.jnet.mcd.api.entity.offer.Offer;
+import org.jannsen.mcreverse.api.entity.offer.Offer;
 
 import java.util.ArrayList;
 import java.util.Arrays;
