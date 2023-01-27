@@ -10,7 +10,6 @@ public class RegAccount {
 
     private final String email, password, deviceId;
     private List<Offer> offers = new ArrayList<>();
-    private List<Integer> supportedTypes = Arrays.asList(3, 6, 12);
     private int points;
     private boolean cataloged, myMcDActive;
 
