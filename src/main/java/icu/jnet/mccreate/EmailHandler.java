@@ -3,6 +3,7 @@ package icu.jnet.mccreate;
 import javax.mail.*;
 import javax.mail.search.FlagTerm;
 import java.io.IOException;
+import java.util.Optional;
 import java.util.Properties;
 
 public class EmailHandler {
@@ -17,19 +18,19 @@ public class EmailHandler {
         this.password = password;
     }
 
-    String searchActivationCode(String regEmail, int timeout) {
+    Optional<String> searchActivationCode(String regEmail, int timeout) {
         for(int i = 0; i < timeout; i += 4) {
             waitMill(4000);
 
-            String code = searchActivationCode(regEmail);
-            if(code != null) {
+            Optional<String> code = searchActivationCode(regEmail);
+            if(code.isPresent()) {
                 return code;
             }
         }
-        return null;
+        return Optional.empty();
     }
 
-    String searchActivationCode(String regEmail) {
+    Optional<String> searchActivationCode(String regEmail) {
         try {
             Properties props = System.getProperties();
             props.setProperty("mail.store.protocol", "imaps");
@@ -53,7 +54,7 @@ public class EmailHandler {
                     if(s.contains("redirect.html")) {
                         if(message.getRecipients(Message.RecipientType.TO)[0].toString().equals(regEmail)) {
                             message.setFlag(Flags.Flag.DELETED, true);
-                            return s.split("redirect.html")[1].split("ac=")[1].split("/")[0];
+                            return Optional.of(s.split("redirect.html")[1].split("ac=")[1].split("/")[0]);
                         } else {
                             message.setFlag(Flags.Flag.SEEN, false);
                         }
@@ -67,7 +68,7 @@ public class EmailHandler {
         } catch (MessagingException | IOException e) {
             e.printStackTrace();
         }
-        return null;
+        return Optional.empty();
     }
 
     private void waitMill(long l) {

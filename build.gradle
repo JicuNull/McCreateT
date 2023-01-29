@@ -15,6 +15,9 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.0'
 
+    // https://mvnrepository.com/artifact/org.slf4j/slf4j-simple
+    implementation 'org.slf4j:slf4j-simple:2.0.6'
+
     // https://mvnrepository.com/artifact/javax.mail/javax.mail-api
     implementation group: 'javax.mail', name: 'javax.mail-api', version: '1.6.2'
 
@@ -27,7 +30,7 @@ dependencies {
     // https://mvnrepository.com/artifact/com.google.code.gson/gson
     implementation 'com.google.code.gson:gson:2.10'
 
-    implementation 'com.github.JicuNull:MCReverse:fd99724'
+    implementation 'com.github.JicuNull:MCReverse:e0b9598'
 }
 
 test {
