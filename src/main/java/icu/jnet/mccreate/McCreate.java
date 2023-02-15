@@ -42,7 +42,7 @@ public class McCreate extends EmailHandler {
                 }
             }
         } else {
-            System.out.println(gson.toJson(response));
+            LOG.info(gson.toJson(response));
         }
         return null;
     }
