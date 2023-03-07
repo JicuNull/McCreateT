@@ -1,4 +1,4 @@
-package icu.jnet.mccreate;
+package org.jannsen.mccreate;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -15,13 +15,19 @@ import java.util.function.Supplier;
 public class McCreate extends EmailHandler {
 
     private final Logger LOG = LoggerFactory.getLogger(getClass());
+    private final AddressGenerator generator;
     private final Random rand = new Random();
     private final Gson gson = new GsonBuilder().setPrettyPrinting().create();
     private final Supplier<SensorToken> tokenSupplier;
 
     public McCreate(String host, int port, String user, String password, Supplier<SensorToken> tokenSupplier) {
         super(host, port, user, password);
+        this.generator = new AddressGenerator(user);
         this.tokenSupplier = tokenSupplier;
+    }
+
+    public RegAccount register() {
+        return register(generator.createEmail());
     }
 
     public RegAccount register(String email) {

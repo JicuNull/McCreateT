@@ -1,4 +1,4 @@
-package icu.jnet.mccreate;
+package org.jannsen.mccreate;
 
 import org.jannsen.mcreverse.api.entity.offer.Offer;
 

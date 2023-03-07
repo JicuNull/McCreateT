@@ -1,4 +1,4 @@
-package icu.jnet.mccreate;
+package org.jannsen.mccreate;
 
 import javax.mail.*;
 import javax.mail.search.FlagTerm;
