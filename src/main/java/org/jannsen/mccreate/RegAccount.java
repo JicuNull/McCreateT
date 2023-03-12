@@ -10,7 +10,6 @@ public class RegAccount {
     private final String _id, password, deviceId;
     private List<Offer> offers = new ArrayList<>();
     private int points;
-    private boolean cataloged, myMcDActive;
 
     public RegAccount(String email, String password, String deviceId) {
         this._id = email;

@@ -30,7 +30,7 @@ dependencies {
     // https://mvnrepository.com/artifact/com.google.code.gson/gson
     implementation 'com.google.code.gson:gson:2.10.1'
 
-    implementation 'com.github.JicuNull:McReverse:cf6c419'
+    implementation 'com.github.JicuNull:McReverse:eccf612'
 }
 
 test {
